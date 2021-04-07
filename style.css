@@ -159,6 +159,15 @@
     background-color: var(--bg-color-dark);
   }
 
+  section#impressum {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-primary);
+  }
+
+  #impressum h1 {
+    color: var(--text-color-primary);
+  }
+
   section#contact {
     background-color: var(--theme-color-new);
     color: var(--text-color-primary);
@@ -313,6 +322,10 @@
   }
   
   .contact {
+    text-align: left;
+  }
+
+  .impressum {
     text-align: left;
   }
   
