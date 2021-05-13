@@ -86,31 +86,17 @@
     margin-left: -0.5em;
   }
 
-  #test1 ul li::before {
+  ul.check-list li::before {
     content: "\2713";
     color: var(--theme-color-new);
     font-weight: bold;
     display: inline-block; 
     width: 1em;
-    margin-left: -0.5em;
+    margin-left: -1.4em;
   }
 
-  #test2 ul li::before {
-    content: "\2713";
-    color: var(--theme-color-new);
-    font-weight: bold;
-    display: inline-block; 
-    width: 1em;
-    margin-left: -0.5em;
-  }
-
-  #test3 ul li::before {
-    content: "\2713";
-    color: var(--theme-color-new);
-    font-weight: bold;
-    display: inline-block; 
-    width: 1em;
-    margin-left: -0.5em;
+  ul.check-list li {
+    padding-left: 1.4em;
   }
 
   ol li {
@@ -364,23 +350,28 @@ nav {
     padding: 0.5rem 2rem;
 }
 
-  .navigation-menu-desktop li {
+  .navigation-menu-desktop >ul >li {
     display: inline;
     color: var(--text-color-light);
     font-size: 0.9em;
+    position: relative;
   }
 
   .navigation-menu-desktop a {
     color: var(--text-color-light);
   }
   
-  .navigation-menu-desktop li:not(:first-child) {
+  .navigation-menu-desktop >ul >li:not(:first-child) {
     margin-left: 2rem;
   }
   
   nav a:hover {
     color: var(--theme-color-new);
     text-decoration: none;
+  }
+
+  nav a #services:hover .sub-menu {
+    display: block;
   }
   
   /* Scrolling */
@@ -482,3 +473,19 @@ nav {
     transform: translateX(0);
   }
 
+  .sub-menu {
+    display: none;
+    position: absolute;
+    top: 38px;
+    left: -13px;
+    background-color: var(--bg-color-deepDark);
+    opacity: 0.95;
+  }
+
+  .sub-menu li {
+    padding: 1em;
+  }
+
+  .sub-menu.show {
+    display: block;
+  }

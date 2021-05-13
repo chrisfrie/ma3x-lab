@@ -8,13 +8,33 @@ var collapseMobileNavigation = function() {
   nav.classList.remove("mobile-navigation-expanded");
 };
 
-var expandButton = document.querySelector("#expand-mobile-navigation");
+var removeShowClassMenu = function() {
+  console.log("body click")
+  var all = document.querySelectorAll(".show");
+  all.forEach((element)=>{
+    element.classList.remove("show");
+  })
+} 
 
+var toggleMenu = function(event) {
+  console.log("service click")
+  var subMenu = document.querySelector(`#${event.target.id} + .sub-menu`);
+  subMenu.classList.toggle("show");
+  event.stopPropagation();
+}
+var expandButton = document.querySelector("#expand-mobile-navigation");
 expandButton.addEventListener("click", expandMobileNavigation);
 
 var collapseButton = document.querySelector("#collapse-mobile-navigation");
-
 collapseButton.addEventListener("click", collapseMobileNavigation);
+
+var serviceMenu = document.querySelector("#services");
+serviceMenu.addEventListener("click", toggleMenu);
+
+var body = document.querySelector("body");
+body.addEventListener("click", removeShowClassMenu)
+
+
 
 // typewriter the h1 -- first possibility
 var i = 0;
