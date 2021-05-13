@@ -258,7 +258,8 @@
   }
   
   footer a:hover {
-    color: var(--text-color-light);
+    color: var(--theme-color-new);
+    text-decoration: none;
   }
   
   .btn {
