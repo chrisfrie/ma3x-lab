@@ -2,7 +2,6 @@
 :root {
     --theme-color-primary: #333;
     --theme-color-lightblue: #375c95;
-    /* --theme-color-new: #F2CA18; */
     --theme-color-new: #cc7112;
     --text-color-primary: rgb(8, 8, 8);
     --text-color-medium: rgb(131, 130, 129);
@@ -13,8 +12,6 @@
     --bg-color-deepDark: rgba(0, 0, 0, 0.3);
     --bg-color-test1: #fef7dd;
     --bg-color-test2: white;
-    /* --bg-color-dark: rgb(58, 56, 56); */
-    /* --bg-color-dark: rgba(0,24,113,1); */
     --bg-color-dark: rgba(22,36,60,1);
     --bg-color-grey: rgba(79,79,79,0.2);
   }
