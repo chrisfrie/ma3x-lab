@@ -9,7 +9,7 @@ var collapseMobileNavigation = function() {
 };
 
 var removeShowClassMenu = function() {
-  console.log("body click")
+  console.log("body click");
   var all = document.querySelectorAll(".show");
   all.forEach((element)=>{
     element.classList.remove("show");
@@ -17,7 +17,8 @@ var removeShowClassMenu = function() {
 } 
 
 var toggleMenu = function(event) {
-  console.log("service click")
+  console.log(event);
+  console.log("service click");
   var subMenu = document.querySelector(`#${event.target.id} + .sub-menu`);
   subMenu.classList.toggle("show");
   event.stopPropagation();
