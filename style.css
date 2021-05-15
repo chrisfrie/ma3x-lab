@@ -280,8 +280,8 @@
   }
   
   .section-header {
-    text-align: center;
-    max-width: 46rem;
+    text-align: left;
+    max-width: 66rem;
     margin: 0 auto;
   }
   .card {
