@@ -383,7 +383,7 @@ nav {
   
   /* Responsive Layout */
 
-  @media (max-width: 630px) {
+  @media (max-width: 645px) {
     h1 {
       font-size: 2.5rem;
     }
@@ -398,7 +398,7 @@ nav {
     }
   }
   
-  @media (max-width: 630px) {
+  @media (max-width: 645px) {
     .navigation-menu-desktop {
       display: none;
     }
@@ -432,7 +432,7 @@ nav {
     top: 1rem;
     right: 1rem;
   }
-  @media (max-width: 630px) {
+  @media (max-width: 645px) {
     .navigation-menu-mobile-collapsed {
       display: initial;
     }
