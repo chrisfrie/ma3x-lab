@@ -10,8 +10,8 @@
     --bg-color-secondary: rgb(242, 245, 246);
     --bg-color-dark: rgb(50, 58, 69);
     --bg-color-deepDark: rgba(0, 0, 0, 0.3);
-    --bg-color-test1: #fef7dd;
-    --bg-color-test2: white;
+    --bg-color-agency: #fef7dd;
+    --bg-color-consulting: white;
     --bg-color-dark: rgba(22,36,60,1);
     --bg-color-grey: rgba(79,79,79,0.2);
   }
@@ -154,8 +154,8 @@
 
   section#banner,
   section#research,
-  section#services #test1,
-  section#services #test3{
+  section#services #agency,
+  section#services #brands{
     background-color: var(--bg-color-dark);
   }
 
@@ -177,22 +177,22 @@
     color: var(--text-color-primary);
   }
 
-  #test1 {
-    background-color: var(--bg-color-test1);
+  #agency {
+    background-color: var(--bg-color-agency);
   }
 
-  #test2 {
-    background-color: var(--bg-color-test2);
+  #consulting {
+    background-color: var(--bg-color-consulting);
     color: var(--text-color-medium);
   }
 
-  #test3 {
-    background-color: var(--bg-color-test1);
+  #brands {
+    background-color: var(--bg-color-agency);
   }
  
-  #test1 .services,
-  #test2 .services,
-  #test3 .services {
+  #agency .services,
+  #consulting .services,
+  #brands .services {
     color: var(--text-color-medium);
   }
 
