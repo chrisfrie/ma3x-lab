@@ -489,6 +489,10 @@ nav {
     transition: all 0.5s;
     visibility: hidden;
   }
+
+  .mobile-navigation-expanded.show {
+    display: block;
+  }
   
   .mobile-navigation-expanded .navigation-menu-mobile {
     visibility: visible;

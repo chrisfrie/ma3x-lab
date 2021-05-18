@@ -23,6 +23,7 @@ var toggleMenu = function(event) {
   subMenu.classList.toggle("show");
   event.stopPropagation();
 }
+
 var expandButton = document.querySelector("#expand-mobile-navigation");
 expandButton.addEventListener("click", expandMobileNavigation);
 
